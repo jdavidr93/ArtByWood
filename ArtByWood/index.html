@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art by Wood | Atelier de Mobiliario y Arquitectura en Madera - Cali & Pereira</title>
+  <meta name="description" content="Diseño a la medida, cocinas integrales y arquitectura en madera en Cali y Pereira. Precisión milimétrica y calidez artesanal." />
+  
+  <!-- Tipografías Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Iconos FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVEGACIÓN -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-content">
+      <a href="#inicio" class="brand">
+        <!-- Tu nuevo logo PNG -->
+  <img src="imagenes/logo.jpg" class="brand-logo" alt="Art by Wood Logo">
+  <div class="brand-text">
+    <span class="brand-name">ART BY WOOD</span>
+    <span class="brand-sub">CALI | PEREIRA</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#filosofia">Atelier</a>
+        <a href="#portafolio">Proyectos</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#cotizar" class="btn-nav">Cotizar Proyecto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="eyebrow">ATELIER DE MOBILIARIO Y ARQUITECTURA EN MADERA</p>
+      <h1>Arquitectura en madera para tus espacios.</h1>
+      <p class="hero-desc">
+        Transformamos espacios cotidianos en piezas funcionales de diseño único, adaptadas milimétricamente a la arquitectura y estilo de vida en <strong>Cali</strong> y <strong>Pereira</strong>.
+      </p>
+      <div class="hero-actions">
+        <a href="#portafolio" class="btn btn-primary">Explorar Portafolio</a>
+        <a href="#cotizar" class="btn btn-outline">Agendar Visita Técnica</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILARES DE MARCA & SELLO DE AUTENTICIDAD -->
+  <section class="section-light" id="filosofia">
+    <div class="container">
+      <div class="split-grid">
+        <div class="split-text">
+          <span class="tag">DISEÑO A LA MEDIDA, ESENCIA NATURAL</span>
+          <h2>Precisión arquitectónica y calidez artesanal.</h2>
+          <p>
+            Elevamos la carpintería tradicional a un estudio de arquitectura interior. Cada cocina integral, vestier o mobiliario comercial se fabrica a su medida y con acabados nobles contemporáneos.
+          </p>
+          <ul class="pillars-list">
+            <li>
+              <strong> Sello de Autenticidad</strong>
+              <span>Cada obra entregada incorpora nuestra placa metálica grabada bronce como garantía de autor y respaldo.</span>
+            </li>
+            <li>
+              <strong> Presentación tipo Revista & Render 3D</strong>
+              <span>Visualiza tu espacio antes de fabricar con propuestas arquitectónicas claras y presupuestos transparentes.</span>
+            </li>
+            <li>
+              <strong> Instalación Certificada</strong>
+              <span>Equipo propio y capacitado para cumplir estrictamente las normativas de conjuntos residenciales en el Valle del Cauca y Eje Cafetero.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="split-card">
+          <!-- Imagen real del Sello de Autor -->
+          <img src="imagenes/high-low.jpeg" alt="Sello de Autenticidad Art by Wood en bronce" class="auth-image">
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTAFOLIO DE PROYECTOS -->
+  <section class="section-dark" id="portafolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag tag-copper">OBRAS REALIZADAS</span>
+        <h2>Portafolio Arquitectónico</h2>
+        <p>Filtra nuestros proyectos ejecutados por ciudad o especialidad.</p>
+      </div>
+
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="cocinas">Cocinas Integrales</button>
+        <button class="filter-btn" data-filter="mobiliario">Mobiliario & Vestiers</button>
+        <button class="filter-btn" data-filter="cali">Cali</button>
+        <button class="filter-btn" data-filter="pereira">Pereira</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- PROCESO DE TRABAJO -->
+  <section class="section-light" id="proceso">
+    <div class="container">
+      <div class="section-header center">
+        <span class="tag">METODOLOGÍA</span>
+        <h2>Del plano de tu mente al arquitectónico en tu espacio</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <span class="step-num">01</span>
+          <h3>Levantamiento & Asesoría</h3>
+          <p>Toma de medidas láser en obra (Cali o Pereira) y selección de paletas, texturas y herrajes.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">02</span>
+          <h3>Render & Cotización</h3>
+          <p>Entrega de dossier digital con vistas fotorrealistas y desglose técnico transparente.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">03</span>
+          <h3>Fabricación Milimétrica</h3>
+          <p>Corte industrial de alta precisión y ensamblaje artesanal en nuestro taller.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">04</span>
+          <h3>Instalación & Sello</h3>
+          <p>Montaje limpio, puntual y entrega formal con placa metálica de autenticidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEDES Y COTIZADOR DIRECTO -->
+  <section class="section-sage" id="cotizar">
+    <div class="container">
+      <div class="quote-wrapper">
+        <div class="quote-info" id="sedes">
+          <span class="tag tag-light">CONTACTO DIRECTO</span>
+          <h2>Iniciemos tu proyecto hoy</h2>
+          <p>Envíanos los datos básicos de tu espacio y un arquitecto especialista te contactará vía WhatsApp para agendar tu visita o cotización.</p>
+          
+          <div class="locations">
+            <div class="location-item">
+              <h4><i class="fas fa-map-marker-alt"></i> Sede Cali</h4>
+              <p>Cr 7H bis N 73-49, Cali, Valle del Cauca</p>
+            </div>
+            <div class="location-item">
+              <h4><i class="fas fa-map-marker-alt"></i> Sede Pereira</h4>
+              <p>Cra. 14 #12-50, Pereira, Risaralda</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="quote-form" id="quoteForm">
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" required placeholder="Ej. Camila Restrepo" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="ciudad">Ciudad del proyecto</label>
+              <select id="ciudad" required>
+                <option value="Cali">Cali / Jamundí / Palmira</option>
+                <option value="Pereira">Pereira / Dosquebradas / Armenia</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="tipo">Tipo de proyecto</label>
+              <select id="tipo" required>
+                <option value="Cocina Integral">Cocina Integral</option>
+                <option value="Vestier / Closets">Vestier / Closets</option>
+                <option value="Centro de Entretenimiento">Centro de Entretenimiento</option>
+                <option value="Mobiliario Comercial">Mobiliario Comercial</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="detalles">Medidas aproximadas o detalles</label>
+            <textarea id="detalles" rows="3" placeholder="Cuéntanos sobre tu espacio, estilo deseado o si ya cuentas con planos..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-copper btn-full"><i class="fab fa-whatsapp"></i> Solicitar Cotización por WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <strong>ART BY WOOD</strong>
+        <p>Atelier de Mobiliario y Arquitectura en Madera</p>
+      </div>
+      
+      <!-- REDES SOCIALES -->
+      <div class="footer-social">
+        <a href="https://instagram.com/tu_usuario" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/tu_usuario" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://linkedin.com/company/tu_empresa" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/573000000000" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+
+      <div class="footer-info">
+        <span>Cali | Pereira • artbywood.co</span>
+        <span>© 2023 Todos los derechos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/573000000000?text=Hola%20Art%20by%20Wood,%20estoy%20interesado%20en%20una%20cotizaci%C3%B3n." class="floating-wa" target="_blank" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- MODAL -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">&times;</button>
+      <img id="modalImg" src="" alt="" />
+      <div class="modal-body">
+        <span class="tag tag-copper" id="modalMeta"></span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <a id="modalWhatsapp" href="#" target="_blank" class="btn btn-primary">Cotizar un diseño similar</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
